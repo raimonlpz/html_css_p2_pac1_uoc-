@@ -4,23 +4,73 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
+    <meta name="description" content="Raimon's portfolio - curriculum vitae. Front-end Developer based in Barcelona">
+    <meta name="keywords" content="portfolio, CV, curriculum, programming, code, front-end, job hunting, Barcelona, university">
+    <meta name="author" content="Raimon López Mor - UOC">
     <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss"><!-- do not remove this line! -->
-    <title>UOC Boilerplate</title>
+    <title>Raimon López Mor - CV</title>
   </head>
   <body>
-    <div class="uoc-container">
-      <picture>
-        <source srcset="./assets/images/logo.png?as=webp&width=350" type="image/webp" />
-        <img src="./assets/images/logo.png?width=350" alt="Universitat Oberta de Catalunya" class="uoc-logo" />
-      </picture>
-      <h1 class="uoc-title">Hello, UOC!</h1>
-      <p>
-        This is a starter template for the Advanced HTML and CSS Tools courses
-        from the Master's Program in Multimedia Applications and the Master's
-        Program in Web App and Website Development at the Universitat Oberta de
-        Catalunya.
-      </p>
-    </div>
+    <!-- Header -->
+    <include src="./views/header.html"></include>
+
+    <!-- About -->
+    <section class="about" id="about">
+        <div class="about__content">
+            <include src="./components/card_about.html"></include>
+            <div class="about__content__description">
+                <p>Hi, people call me Rai, I'm based in Barcelona (CAT). I'm a self-taught developer focused on web applications with a strong interest in the intersection between tech, design & storytelling.‍ ◲</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Qualifications -->
+    <section class="qualifications" id="qualifications">
+        <div class="qualifications__content">
+            <include src="./components/card_qualifications.html"></include>
+            <div class="qualifications__content__list">
+                <ul>
+                    <li><a href="https://estudios.uoc.edu/es/masters-universitarios/desarrollo-sitios-aplicaciones-web/presentacion" target="_blank" aria-label="UOC Master's website"><span class="year">2020-2022</span> | UOC - Master's Degree in Web App Development</a></li>
+                    <li><a href="https://estudios.uoc.edu/es/grados/antropologia-evolucion-humana/presentacion" target="_blank" aria-label="UOC Degree's website"><span class="year">2017-2019</span> | UOC - Anthropology & Human Evolution (to-do)</a></li>
+                    <li><a href="https://www.ub.edu/portal/web/filologia-comunicacio/graus/-/ensenyament/detallEnsenyament/6286725/21" target="_blank" aria-label="UB Degree's website"><span class="year">2015-2019</span> | UB - Communication & Cultural Industries</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Work/Experience -->
+    <section class="work" id="work">
+        <div class="work__content">
+            <include src="./components/card_work.html"></include>
+            <div class="work__content__list">
+                <ul>
+                    <li><a href="https://www.urbiotica.com" target="_blank" aria-label="Visit Urbiotica's catalogue website"><span class="year">2022</span> | Urbiotica - Cross Platform Development (Flutter & React)</a></li>
+                    <li><a href="https://www.digitaldosis.com" target="_blank" aria-label="Visit Digital Dosis portfolio"><span class="year">2021</span> | Digital Dosis - Web UI Development for a creative studio working directly with clients</a></li>
+                    <li><a href="https://www.e-zigurat.com/es/" target="_blank" aria-label="Visit Zigurat Global Ins. of Tech. website"><span class="year">2020-2021</span> | Zigurat Global Ins. of Technology - Web support for e-learning platform system (LMS Canvas). HTML, CSS & vanilla JS</a></li>
+                    <li><a href="https://pulpo.es/" target="_blank" aria-label="Visit Pulpo's web app"><span class="year">2020</span> | Hometimes (now Pulpo) - Help-in developing some UI features for a start-up (hybrid) mobile app mvp written in Dart & Flutter</a></li>
+                    <li><a href="https://www.filmoteca.cat/web/es" target="_blank" aria-label="Visit the Filmoteca de Catalunya website"><span class="year">2018-2019</span> | Filmoteca de Catalunya - Technical support for exhibition projects; research, consultation & location of documents in ddbb.</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="contact" id="contact">
+        <div class="contact__content">
+            <div class="contact__content__list">
+                <ul>
+                    <li><a href="https://www.linkedin.com/in/raimon-lopez-mor" target="_blank" aria-label="Visit my Linkedin"><i class="fa-brands fa-linkedin"></i></a></li>
+                    <li><a href="https://github.com/raimonlpz" target="_blank" aria-label="Visit my Linkedin"><i class="fa-brands fa-github"></i></a></li>
+                    <li><a href="mailto:raimonlpez@gmail.com" aria-label="Send me an e-mail"><i class="fa-solid fa-envelope"></i></a></li>
+                </ul>
+            </div>
+            <div class="contact__content__meta">
+                <p>Raimon López Mor©. UOC 2022</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
     <include src="./views/footer.html"></include>
     <script type="module" src="./assets/scripts/main.js"></script><!-- do not remove this line! -->
   </body>

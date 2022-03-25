@@ -1,0 +1,61 @@
+@use "sass:color";
+
+/**
+FONT (serif & sans-serif) definitions,
+map to store the variables,
+function to acces stored values
+**/
+$font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+  "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+  "Segoe UI Symbol";
+$font-family-serif: "Georgia", "Times New Roman", serif;
+
+$fonts: (
+  sans-serif: $font-family-sans-serif,
+  serif: $font-family-serif
+);
+
+@function get_font($font-name) {
+  @return map-get($fonts, $font-name);
+}
+
+/**
+COLOR definitions
+**/
+$cv-primary: #231f20;
+$cv-secondary: #d0b8ac;
+$cv-tertiary: #2c2c2c;
+$cv-quaternary: #352d35;
+$cv-light: #fbfefb;
+$cv-bg: color.scale($cv-primary, $lightness: 70%);
+
+$colors: (
+  primary: $cv-primary,
+  secondary: $cv-secondary,
+  tertiary: $cv-tertiary,
+  quaternary: $cv-quaternary,
+  light: $cv-light,
+  bg: $cv-bg
+);
+
+@function get_color($color-name) {
+  @return map-get($colors, $color-name);
+}
+
+
+/**
+Font SIZE
+**/
+$font-sizes: (
+  xl: 3rem,
+  lg: 2.5rem,
+  md: 2rem,
+  sm: 1.8rem,
+  xs: 1.2rem
+);
+
+@function get_size($size) {
+  @return map-get($font-sizes, $size);
+}
+
+$mqMinWidth: 420px;

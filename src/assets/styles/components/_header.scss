@@ -1,0 +1,43 @@
+.header {
+  position: fixed;
+  width: 100vw;
+  text-align: center;
+  margin-top: 4rem;
+  font-size: get-size(md);
+  z-index: 10;
+
+
+  @media (max-width: '800px') {
+    font-size: get-size(xs);
+    font-weight: 600;
+  }
+
+
+  .link {
+    padding: 2rem;
+    margin: 2rem;
+    text-decoration: none;
+    color: get-color(secondary);
+    font-weight: 200;
+
+    @include styled-link-hovered;
+
+
+    @media (max-width: '800px') {
+      padding:.2rem;
+      font-weight: 700;
+    }
+
+
+  }
+
+  .link--contact {
+    @media (max-width: '800px') {
+      display: none;
+    }
+  }
+
+
+}
+
+

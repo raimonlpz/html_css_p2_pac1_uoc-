@@ -1,0 +1,75 @@
+@mixin styled-link-hovered {
+  transition:  all 2s cubic-bezier(0.165, 0.84, 0.44, 1);
+
+  &:hover {
+    background: get-color(secondary);
+    color: get-color(tertiary);
+    cursor: pointer;
+    border-radius: 15px;
+    -webkit-transition:opacity 1500ms ease-out;
+    -moz-transition:opacity 1500ms ease-out;
+    -o-transition:opacity 1500ms ease-out;
+    transition:opacity 1500ms ease-out;
+  }
+}
+
+
+@mixin styled-card-hovered-horizontal($width, $height) {
+  transition: all 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+
+  &:hover {
+    width: $width;
+    height: $height;
+    cursor: none;
+
+    @media (max-width: '800px') {
+      width: calc($width - 13rem);
+      height: calc($height - 5rem);
+  }
+
+  }
+}
+
+
+@mixin styled-hyperlink {
+  text-decoration: none;
+  cursor: wait;
+  transition: color 0.3s, text-shadow 0.3s;
+
+  a {
+    text-decoration: none;
+    color: get-color(secondary);
+  }
+
+  &:hover {
+    text-shadow: 6px 6px 18px #000;
+  }
+}
+
+
+@mixin styled-list-items {
+  color: get-color(light);
+
+  ul {
+    list-style-type: circle;
+    margin: 0;
+    padding: 0;
+    font-size: get-size(md);
+    font-weight: 100;
+
+    @media (max-width: '800px') {
+      font-size: get-size(sm);
+      font-weight: 400;
+      width: 90vw;
+      justify-content: center;
+      list-style: none;
+      margin-left: 2rem;
+    }
+
+    li {
+      padding: 2rem;
+
+      @include styled-hyperlink;
+    }
+  }
+}

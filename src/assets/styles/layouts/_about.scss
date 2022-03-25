@@ -1,0 +1,23 @@
+.about {
+
+  &__content {
+    background-color: get-color(primary);
+    color: get-color(light);
+    padding-top: 12rem;
+
+    &__description {
+      font-size: 3.5rem;
+      position: absolute;
+      font-weight: 100;
+      bottom: 0;
+      padding: 3rem;
+
+
+      @media (max-width: '800px') {
+        font-size: get-size(md);
+        position: relative;
+      }
+    }
+
+  }
+}

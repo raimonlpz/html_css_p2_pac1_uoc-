@@ -11,6 +11,7 @@
  */
 
 +( function() {
-  const university = "UOC";
-  console.log(`Hello, ${university}!`);
+  const signedBy = "Raimon López Mor";
+  const meta = "Universitat Oberta de Catalunya (2022)"
+  console.log(`Made by ${signedBy} - ${meta}`);
 } )();

@@ -1,0 +1,29 @@
+.qualifications {
+
+  &__content {
+    background-color: get-color(tertiary);
+    padding-top: 12rem;
+    position: relative;
+
+    @media (max-width: '800px') {
+      padding-top: 6rem;
+    }
+
+    &__list {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -ms-transform: translateY(-50%);
+      transform: translateY(-50%);
+
+      @media (max-width: '800px') {
+        position: relative;
+        top:0;
+        left:0;
+        transform: none;
+      }
+
+      @include styled-list-items;
+    }
+  }
+}

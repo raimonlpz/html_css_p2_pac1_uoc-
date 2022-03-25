@@ -19,7 +19,7 @@
         @include styled-link-hovered;
 
 
-        @media (max-width: '800px') {
+        @media (max-width: $mqMaxWidth) {
           font-size: get-size(sm);
         }
       }

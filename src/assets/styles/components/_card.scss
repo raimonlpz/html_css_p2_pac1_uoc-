@@ -13,7 +13,7 @@
 
   @include styled-card-hovered-horizontal(42rem, 40rem);
 
-  @media (max-width: '800px') {
+  @media (max-width: $mqMaxWidth) {
       width: 17rem;
   }
 
@@ -30,7 +30,7 @@
       color: get-color(light);
       font-weight: 100;
 
-      @media (max-width: '800px') {
+      @media (max-width: $mqMaxWidth) {
         font-size: get-size(md);
       }
     }
@@ -40,7 +40,7 @@
       color: get-color(light);
       font-weight: 100;
 
-      @media (max-width: '800px') {
+      @media (max-width: $mqMaxWidth) {
         font-size: get-size(xs);
         font-weight: 600;
       }
@@ -56,7 +56,7 @@
 .card--qualifications {
   margin-left: 20%;
 
-  @media (max-width: '800px') {
+  @media (max-width: $mqMaxWidth) {
     margin-left:50%;
     transform: translateX(-50%);
   }
@@ -66,7 +66,7 @@
 .card--work {
   margin-left: 70%;
 
-  @media (max-width: '800px') {
+  @media (max-width: $mqMaxWidth) {
     margin-left:50%;
     transform: translateX(-50%);
   }

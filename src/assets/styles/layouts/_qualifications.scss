@@ -5,7 +5,7 @@
     padding-top: 12rem;
     position: relative;
 
-    @media (max-width: '800px') {
+    @media (max-width: $mqMaxWidth) {
       padding-top: 6rem;
     }
 
@@ -16,7 +16,7 @@
       -ms-transform: translateY(-50%);
       transform: translateY(-50%);
 
-      @media (max-width: '800px') {
+      @media (max-width: $mqMaxWidth) {
         position: relative;
         top:0;
         left:0;

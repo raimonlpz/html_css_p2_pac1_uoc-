@@ -13,7 +13,7 @@
       padding: 3rem;
 
 
-      @media (max-width: '800px') {
+      @media (max-width: $mqMaxWidth) {
         font-size: get-size(md);
         position: relative;
       }

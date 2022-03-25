@@ -22,7 +22,7 @@
     height: $height;
     cursor: none;
 
-    @media (max-width: '800px') {
+    @media (max-width: $mqMaxWidth) {
       width: calc($width - 13rem);
       height: calc($height - 5rem);
   }
@@ -57,7 +57,7 @@
     font-size: get-size(md);
     font-weight: 100;
 
-    @media (max-width: '800px') {
+    @media (max-width: $mqMaxWidth) {
       font-size: get-size(sm);
       font-weight: 400;
       width: 90vw;

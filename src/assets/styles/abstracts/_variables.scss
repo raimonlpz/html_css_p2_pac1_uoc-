@@ -58,4 +58,4 @@ $font-sizes: (
   @return map-get($font-sizes, $size);
 }
 
-$mqMinWidth: 420px;
+$mqMaxWidth: 800px;
